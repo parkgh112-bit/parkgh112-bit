@@ -12,17 +12,11 @@
 
 <br>
 
-## 지금 하는 일
-
-AWS EKS 위의 주문/재고 서비스에 장애를 일으키고, AI 에이전트가 원인을 찾아 조치하는지 검증하는 팀 프로젝트(AICloudWave Team4)를 하고 있습니다.
-에이전트/MCP 서버 코드(`dbnj-aiops`)와 Terraform 인프라(`dbnj-infra`)를 작업했습니다. 두 레포는 비공개입니다.
-
-<br>
-
 ## 프로젝트
 
 | 프로젝트 | 내용 | 스택 |
 |:--|:--|:--|
+| **AIOps 장애 진단·조치**<br><sub>AICloudWave Team4 · 팀 · 레포 비공개</sub> | EKS 위 주문/재고 MSA에 장애를 주입하고, AI 에이전트가 모니터링 → 진단 → 조치까지 하는지 검증한 프로젝트. 모니터링/진단/조치 에이전트와 Loki·Prometheus MCP 서버를 AgentCore로 배포했고, 런북은 Bedrock Knowledge Base로 검색해 조치안을 고르게 했습니다. 장애 시나리오 5종. 에이전트 코드와 Terraform 인프라를 작업했습니다. | `Bedrock AgentCore` `Terraform` `EKS` `Aurora` `SQS` `Prometheus` `Loki` |
 | **[skin_tone_analysis](https://github.com/parkgh112-bit/skin_tone_analysis)**<br><sub>캡스톤</sub> | 얼굴 이미지에서 MST 스케일 피부톤을 분류하고, 전문 장비(Mark-Vu) 측정값과 합쳐 리포트와 맞춤 추천을 보여주는 웹 서비스 | `Next.js` `Flask` `MediaPipe` `LightGBM` `Gemini API` |
 | **[CanonProject_real](https://github.com/parkgh112-bit/CanonProject_real)** | 제품 이미지에서 부품을 YOLO로 찾고 CNN으로 합격/불합격을 판정하는 검수 도구. 실시간 카메라 분석, 일괄 분석, CSV 내보내기 지원 | `YOLO` `CNN` `FastAPI` `Next.js` |
 | **[tire-hole-detection-project](https://github.com/parkgh112-bit/tire-hole-detection-project)** | 타이어 몰드의 미세한 벤트 홀 검출. 작은 객체가 잘 안 잡혀서 SAHI 슬라이싱 추론과 CLAHE 전처리로 F1 개선 | `YOLOv8` `SAHI` `OpenCV` |
