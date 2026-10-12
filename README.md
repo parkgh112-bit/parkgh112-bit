@@ -35,6 +35,7 @@ EKS 위 주문/재고 MSA에 장애를 주입하고, AI 에이전트가 모니�
 - **도구 권한**: 에이전트별 도구(tool) 권한을 할당하는 방식을 설계
 - **예외 처리**: 실패 상황별 예외 처리를 설계
 - **배포**: 모니터링/진단/조치 에이전트와 Loki·Prometheus MCP 서버를 AgentCore로 배포
+- **관측**: Prometheus·Loki의 메트릭/로그를 MCP 서버로 연결해 에이전트가 진단 근거로 쓰도록 구성
 - **인프라**: Terraform으로 구성 (AI 코딩 도구 활용)
 
 </details>
@@ -47,6 +48,12 @@ EKS 위 주문/재고 MSA에 장애를 주입하고, AI 에이전트가 모니�
 - **컴퓨터 비전**: 객체 검출·분류 모델 학습과 서비스 적용
 - **오디오 데이터**: 특징 추출과 분류 모델
 - **AWS 기반 서비스 구성**
+
+## 프로젝트에 사용한 기술
+
+<p>
+  <img alt="Python, TypeScript, Next.js, Flask, FastAPI, OpenCV, AWS, Terraform, Kubernetes, Prometheus" src="https://skillicons.dev/icons?i=py,ts,nextjs,flask,fastapi,opencv,aws,terraform,kubernetes,prometheus&perline=10">
+</p>
 
 ## 작업 방식
 
