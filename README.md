@@ -1,4 +1,4 @@
-<h1 align="center">parkgh112-bit</h1>
+<h1 align="center">Park Gyuhyeon</h1>
 
 <p align="center">
   모델을 만들고, 그 모델이 돌아가는 서비스까지 붙여 보는 개발자입니다.
