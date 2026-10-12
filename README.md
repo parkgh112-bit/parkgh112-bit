@@ -14,13 +14,29 @@
 
 ## 프로젝트
 
-| 프로젝트 | 내용 | 스택 |
+| 프로젝트 | 한 줄 소개 | 스택 |
 |:--|:--|:--|
-| **AIOps 장애 진단·조치**<br><sub>AICloudWave Team4 · 팀 · 레포 비공개</sub> | EKS 위 주문/재고 MSA에 장애를 주입하고, AI 에이전트가 모니터링 → 진단 → 조치까지 하는지 검증한 프로젝트. **AIOps 전반의 설계를 맡았습니다.**<br>• Step Functions로 에이전트 파이프라인 전체 설계<br>• RAG 구성에 쓸 AWS 서비스 선정 (런북 검색은 Bedrock Knowledge Base)<br>• 에이전트별 사용 모델 선정<br>• 에이전트별 도구(tool) 권한 할당 방식 설계<br>• 예외 처리 설계<br>• 모니터링/진단/조치 에이전트와 Loki·Prometheus MCP 서버를 AgentCore로 배포 | `Step Functions` `Bedrock AgentCore` `Bedrock KB` `Terraform` `EKS` `Prometheus` `Loki` |
-| **[skin_tone_analysis](https://github.com/parkgh112-bit/skin_tone_analysis)**<br><sub>캡스톤</sub> | 얼굴 이미지에서 MST 스케일 피부톤을 분류하고, 전문 장비(Mark-Vu) 측정값과 합쳐 리포트와 맞춤 추천을 보여주는 웹 서비스 | `Next.js` `Flask` `MediaPipe` `LightGBM` `Gemini API` |
-| **[CanonProject_real](https://github.com/parkgh112-bit/CanonProject_real)** | 제품 이미지에서 부품을 YOLO로 찾고 CNN으로 합격/불합격을 판정하는 검수 도구. 실시간 카메라 분석, 일괄 분석, CSV 내보내기 지원 | `YOLO` `CNN` `FastAPI` `Next.js` |
-| **[tire-hole-detection-project](https://github.com/parkgh112-bit/tire-hole-detection-project)** | 타이어 몰드의 미세한 벤트 홀 검출. 작은 객체가 잘 안 잡혀서 SAHI 슬라이싱 추론과 CLAHE 전처리로 F1 개선 | `YOLOv8` `SAHI` `OpenCV` |
-| **[audio-preprocessing-pipeline](https://github.com/parkgh112-bit/audio-preprocessing-pipeline)** | 코골이 감지 프로젝트의 전처리와 특징 추출 담당. 1초 단위 슬라이싱으로 데이터 증강, 39차원 MFCC 추출. 최종 모델 정확도 95.6%, F1 90.6% | `Librosa` `NumPy` `Pandas` |
+| **AIOps 장애 진단·조치**<br><sub>AICloudWave Team4 · 팀 · 레포 비공개</sub> | Step Functions 기반 에이전트 파이프라인을 설계한 AIOps 전반 설계 담당 | `Step Functions` `Bedrock AgentCore` `Terraform` `EKS` |
+| **[skin_tone_analysis](https://github.com/parkgh112-bit/skin_tone_analysis)**<br><sub>캡스톤</sub> | 얼굴 이미지로 MST 피부톤을 분류하고 전문 장비 데이터와 합쳐 맞춤 추천 제공 | `Next.js` `Flask` `MediaPipe` `LightGBM` |
+| **[CanonProject_real](https://github.com/parkgh112-bit/CanonProject_real)** | YOLO로 부품을 찾고 CNN으로 합격/불합격을 판정하는 이미지 검수 도구 | `YOLO` `CNN` `FastAPI` `Next.js` |
+| **[tire-hole-detection-project](https://github.com/parkgh112-bit/tire-hole-detection-project)** | SAHI와 CLAHE로 소형 객체 검출 F1을 개선한 타이어 몰드 벤트 홀 검출 | `YOLOv8` `SAHI` `OpenCV` |
+| **[audio-preprocessing-pipeline](https://github.com/parkgh112-bit/audio-preprocessing-pipeline)** | 코골이 감지용 전처리·MFCC 추출 담당, 최종 모델 정확도 95.6% / F1 90.6% | `Librosa` `NumPy` `Pandas` |
+
+<details>
+<summary><b>AIOps 장애 진단·조치 · 설계 상세 보기</b></summary>
+
+<br>
+
+EKS 위 주문/재고 MSA에 장애를 주입하고, AI 에이전트가 모니터링 → 진단 → 조치까지 하는지 검증한 프로젝트입니다. AIOps 전반의 설계를 맡았습니다.
+
+- **파이프라인**: Step Functions로 에이전트 파이프라인 전체를 설계
+- **RAG**: 구성에 쓸 AWS 서비스를 선정 (런북 검색은 Bedrock Knowledge Base)
+- **모델**: 에이전트별 사용 모델을 선정
+- **도구 권한**: 에이전트별 도구(tool) 권한을 할당하는 방식을 설계
+- **예외 처리**: 실패 상황별 예외 처리를 설계
+- **배포**: 모니터링/진단/조치 에이전트와 Loki·Prometheus MCP 서버를 AgentCore로 배포
+
+</details>
 
 <br>
 
